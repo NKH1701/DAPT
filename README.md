@@ -11,7 +11,7 @@ Understanding how gene perturbations alter cellular transcriptional responses is
 DAPT replaces standard ID-based perturbation embeddings with a descriptor-based representation. This allows our model to learn the intrinsic biological properties of genes, significantly improving zero-shot prediction for both unseen and out-of-vocabulary (OOV) perturbations.
 
 ## 💡 Key Innovations
-- Descriptor-Based Representation: Replaces discrete, ID-based embeddings with semantic biological gene descriptors, enabling parameter sharing across genes.
-- Perturbation Regularized Autoencoder (RAE): Transforms high-dimensional descriptors into dense latent embeddings through non-linear transformations.
-- Biological Knowledge Integration: Utilizes Gene Ontology (GO) and Gene Co-expression graphs as dense substrates for message passing, ensuring predictions are grounded in functional pathways.
-- OOV Generalization : Generates perturbation representations directly from input descriptors, enabling out-of-distribution generalization, particularly for unseen or novel gene perturbations.
+- **Descriptor-Based Representation:** Replaces discrete, ID-based embeddings with semantic biological gene descriptors, enabling parameter sharing across genes.
+- **Perturbation Regularized Autoencoder (RAE):** Transforms high-dimensional descriptors into dense latent embeddings through non-linear transformations.
+- **Biological Knowledge Integration:** Utilizes Gene Ontology (GO) and Gene Co-expression graphs as dense substrates for message passing, ensuring predictions are grounded in functional pathways.
+- **OOV Generalization:** Generates perturbation representations directly from input descriptors, enabling out-of-distribution generalization, particularly for unseen or novel gene perturbations.
