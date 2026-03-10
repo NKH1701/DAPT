@@ -17,6 +17,8 @@ DAPT replaces standard ID-based perturbation embeddings with a descriptor-based 
 - **OOV Generalization:** Generates perturbation representations directly from input descriptors, enabling out-of-distribution generalization, particularly for unseen or novel gene perturbations.
 
 ## 🚀 Quick Start
+Want to start using it immediately? Check out the [Usage Guide](https://nkh1701.github.io/DAPT/)
+
 DAPT is designed to be flexible. You can interact with it visually through a web dashboard, or integrate it directly into your own bioinformatics scripts for high-throughput batch processing.
 ### 1. 🔗 Interactive Web Dashboard
 The easiest way to experience DAPT is through our interactive web application—no installation required! For real-time inference and visual analysis of single and multigene perturbations in Norman et al. (2019) Perturb-seq dataset.
