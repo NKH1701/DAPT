@@ -24,7 +24,7 @@ For researchers wanting to evaluate large datasets, DAPT provides a clean API.
 
 Here is a minimal example of how to load the data manager (`Constellation`), initialize the `Dapt` neural network controller, and predict a multigene perturbation:
 
-```
+```python
 import torch
 from dapt import Constellation, Dapt
 
