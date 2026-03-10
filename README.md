@@ -19,6 +19,16 @@ DAPT replaces standard ID-based perturbation embeddings with a descriptor-based 
 ## 🚀 Quick Start
 DAPT is designed to be flexible. You can interact with it visually through a web dashboard, or integrate it directly into your own bioinformatics scripts for high-throughput batch processing.
 ### 1. 🔗 Interactive Web Dashboard
+The easiest way to experience DAPT is through our interactive web application—no installation required! For real-time inference and visual analysis of single and multigene perturbations in Norman et al. (2019) Perturb-seq dataset.
+
+👉 **[Access the DAPT Web Dashboard Here](https://huggingface.co/spaces/NKH1701/DAPT)**
+
+How to use the dashboard?<br>
+1. Select a Task: Use the left sidebar to choose your experiment mode.<br>
+2. Choose Target Genes: Select the specific genes you want to perturb from the dropdown menus.<br>
+3. Run Inference: Click the **"Run DAPT Inference 🚀"** button to process the Co-expression and GO Graphs.<br>
+4. Explore Results: Open the **"📊 Top Genes Chart"** and **"📋 Full Data Table"** tab to visualize the most shifted genes plot and complete predicted transcriptomic profile.
+
 ### 2. ⚙️ Programmatic Python API
 For researchers wanting to evaluate large datasets, DAPT provides a clean API.
 
