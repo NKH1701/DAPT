@@ -18,8 +18,8 @@ DAPT replaces standard ID-based perturbation embeddings with a descriptor-based 
 
 ## 🚀 Quick Start
 DAPT is designed to be flexible. You can interact with it visually through a web dashboard, or integrate it directly into your own bioinformatics scripts for high-throughput batch processing.
-1. 🔗 Interactive Web Dashboard
-2. ⚙️ Programmatic Python API
+### 1. 🔗 Interactive Web Dashboard
+### 2. ⚙️ Programmatic Python API
 For researchers wanting to evaluate large datasets, DAPT provides a clean API.
 
 Here is a minimal example of how to load the data manager (`Constellation`), initialize the `Dapt` neural network controller, and predict a multigene perturbation:
