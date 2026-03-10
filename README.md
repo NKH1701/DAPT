@@ -15,3 +15,34 @@ DAPT replaces standard ID-based perturbation embeddings with a descriptor-based 
 - **Perturbation Regularized Autoencoder (RAE):** Transforms high-dimensional descriptors into dense latent embeddings through non-linear transformations.
 - **Biological Knowledge Integration:** Utilizes Gene Ontology (GO) and Gene Co-expression graphs as dense substrates for message passing, ensuring predictions are grounded in functional pathways.
 - **OOV Generalization:** Generates perturbation representations directly from input descriptors, enabling out-of-distribution generalization, particularly for unseen or novel gene perturbations.
+
+## 🚀 Quick Start
+DAPT is designed to be flexible. You can interact with it visually through a web dashboard, or integrate it directly into your own bioinformatics scripts for high-throughput batch processing.
+1. 🔗 Interactive Web Dashboard
+2. ⚙️ Programmatic Python API
+For researchers wanting to evaluate large datasets, DAPT provides a clean API.
+
+Here is a minimal example of how to load the data manager (`Constellation`), initialize the `Dapt` neural network controller, and predict a multigene perturbation:
+
+```
+import torch
+from dapt import Constellation, Dapt
+
+# 1. Initialize the Data Manager
+# Constellation loads the biological mappings, GO graphs, and datasets
+constellation = Constellation(config_path="configs/norman_experiment.yaml")
+
+# 2. Initialize the DAPT Controller
+model = Dapt(config=constellation.get_model_config())
+model.load_model("weights/dapt_best_weights.pt")
+
+# 3. Predict Post-Perturbation Expression
+# Example: Predicting a complex non-additive double-gene perturbation
+baseline_expression = constellation.get_baseline()
+predicted_transcriptome = model.predict(
+    unperturbed_state=baseline_expression,
+    perturbation_set=["A1BG", "CD86"]
+)
+
+print(f"Predicted Expression Profile Shape: {predicted_transcriptome.shape}")
+```
