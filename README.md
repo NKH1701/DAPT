@@ -1,7 +1,8 @@
 # DAPT
 **Predicting Transcriptional Outcomes of Multigene Perturbations under Multi-Omics**
 ## 📍 Overview
-<img width="1408" height="736" alt="Gemini_Generated_Image_klw283klw283klw2" src="https://github.com/user-attachments/assets/592e1985-5e86-47b9-9f57-b5b1093fa6d2" />
+<img width="1408" height="752" alt="dapt" src="https://github.com/user-attachments/assets/ad271594-1061-477b-bfbf-94dbb04b18c2" />
+
 
 
 We present **DAPT**, a novel deep learning framework designed to predict the transcriptional outcomes of single and multigene perturbations. Developed to overcome the structural limits of existing models. DAPT introduces a descriptor-driven perturbation adapter integrated with Graph Neural Networks (GNNs) and prior biological knowledge.
